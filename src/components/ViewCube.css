@@ -1,0 +1,21 @@
+.view-cube-container {
+  position: relative;
+  width: 35%;
+  height: 80px;
+  margin: 0 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-cube-container canvas {
+  position: relative;
+  width: 80px !important;
+  height: 80px !important;
+  display: block;
+} 

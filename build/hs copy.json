@@ -1,0 +1,56 @@
+{
+  "building": {
+    "name": "SimpleHouse",
+    "floors": [
+      {
+        "name": "GroundFloor",
+        "level": 0,
+        "height": 3,
+        "rooms": [
+          {
+            "name": "Main House",
+            "footprint": [
+              [0, 0],
+              [10000, 0],
+              [10000, 8000],
+              [0, 8000]
+            ],
+            "walls": [
+              {
+                "start": [0, 0],
+                "end": [10000, 0],
+                "thickness": 200
+              },
+              {
+                "start": [10000, 0],
+                "end": [10000, 8000],
+                "thickness": 20,
+                "window": {
+                  "position": 4000,
+                  "verticalPosition": 1000,
+                  "width": 1500,
+                  "height": 1200
+                }
+              },
+              {
+                "start": [10000, 8000],
+                "end": [0, 8000],
+                "thickness": 200
+              },
+              {
+                "start": [0, 8000],
+                "end": [0, 0],
+                "thickness": 20,
+                "door": {
+                  "position": 5000,
+                  "width": 900,
+                  "height": 2100
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

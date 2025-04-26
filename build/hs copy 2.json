@@ -1,0 +1,653 @@
+{
+  "building": {
+    "name": "SimpleHouse",
+    "floors": [
+      {
+        "name": "GroundFloor",
+        "level": 0,
+        "height": 3000,
+        "material": {
+          "color": "#e8e8e8",
+          "opacity": 0.75
+        },
+        "rooms": [
+          {
+            "name": "Living Room",
+            "footprint": [
+              [
+                0,
+                0
+              ],
+              [
+                6000,
+                0
+              ],
+              [
+                6000,
+                4000
+              ],
+              [
+                0,
+                4000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  0,
+                  0
+                ],
+                "end": [
+                  6000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  6000,
+                  0
+                ],
+                "end": [
+                  6000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "window": {
+                  "position": 1000,
+                  "verticalPosition": 1000,
+                  "width": 1800,
+                  "height": 1200,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  6000,
+                  4000
+                ],
+                "end": [
+                  0,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 3000,
+                  "width": 900,
+                  "height": 2100,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  0,
+                  4000
+                ],
+                "end": [
+                  0,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              }
+            ]
+          },
+          {
+            "name": "Kitchen",
+            "footprint": [
+              [
+                6000,
+                0
+              ],
+              [
+                10000,
+                0
+              ],
+              [
+                10000,
+                4000
+              ],
+              [
+                6000,
+                4000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  6000,
+                  0
+                ],
+                "end": [
+                  10000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  10000,
+                  0
+                ],
+                "end": [
+                  10000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "window": {
+                  "position": 2000,
+                  "verticalPosition": 1000,
+                  "width": 1500,
+                  "height": 1200,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  10000,
+                  4000
+                ],
+                "end": [
+                  6000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  6000,
+                  4000
+                ],
+                "end": [
+                  6000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 1000,
+                  "width": 800,
+                  "height": 2100,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Stairwell",
+            "footprint": [
+              [
+                4000,
+                4000
+              ],
+              [
+                6000,
+                4000
+              ],
+              [
+                6000,
+                8000
+              ],
+              [
+                4000,
+                8000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  4000,
+                  4000
+                ],
+                "end": [
+                  6000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  6000,
+                  4000
+                ],
+                "end": [
+                  6000,
+                  8000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  6000,
+                  8000
+                ],
+                "end": [
+                  4000,
+                  8000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 1000,
+                  "width": 900,
+                  "height": 2100,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  4000,
+                  8000
+                ],
+                "end": [
+                  4000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SecondFloor",
+        "level": 3000,
+        "height": 3000,
+        "material": {
+          "color": "#e8e8e8",
+          "opacity": 0.75
+        },
+        "rooms": [
+          {
+            "name": "Bedroom 1",
+            "footprint": [
+              [
+                0,
+                0
+              ],
+              [
+                4000,
+                0
+              ],
+              [
+                4000,
+                4000
+              ],
+              [
+                0,
+                4000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  0,
+                  0
+                ],
+                "end": [
+                  4000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  4000,
+                  0
+                ],
+                "end": [
+                  4000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "window": {
+                  "position": 1000,
+                  "verticalPosition": 1000,
+                  "width": 1200,
+                  "height": 1000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  4000,
+                  4000
+                ],
+                "end": [
+                  0,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  0,
+                  4000
+                ],
+                "end": [
+                  0,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 1000,
+                  "width": 800,
+                  "height": 2000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Bedroom 2",
+            "footprint": [
+              [
+                4000,
+                0
+              ],
+              [
+                8000,
+                0
+              ],
+              [
+                8000,
+                4000
+              ],
+              [
+                4000,
+                4000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  4000,
+                  0
+                ],
+                "end": [
+                  8000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  8000,
+                  0
+                ],
+                "end": [
+                  8000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "window": {
+                  "position": 1500,
+                  "verticalPosition": 1000,
+                  "width": 1200,
+                  "height": 1000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  8000,
+                  4000
+                ],
+                "end": [
+                  4000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  4000,
+                  4000
+                ],
+                "end": [
+                  4000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 1000,
+                  "width": 800,
+                  "height": 2000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Bedroom 3",
+            "footprint": [
+              [
+                8000,
+                0
+              ],
+              [
+                10000,
+                0
+              ],
+              [
+                10000,
+                4000
+              ],
+              [
+                8000,
+                4000
+              ]
+            ],
+            "walls": [
+              {
+                "start": [
+                  8000,
+                  0
+                ],
+                "end": [
+                  10000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  10000,
+                  0
+                ],
+                "end": [
+                  10000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                }
+              },
+              {
+                "start": [
+                  10000,
+                  4000
+                ],
+                "end": [
+                  8000,
+                  4000
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "window": {
+                  "position": 1000,
+                  "verticalPosition": 1000,
+                  "width": 1000,
+                  "height": 1000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              },
+              {
+                "start": [
+                  8000,
+                  4000
+                ],
+                "end": [
+                  8000,
+                  0
+                ],
+                "thickness": 150,
+                "material": {
+                  "color": "#e8e8e8",
+                  "opacity": 0.75
+                },
+                "door": {
+                  "position": 500,
+                  "width": 800,
+                  "height": 2000,
+                  "depth": 155,
+                  "material": {
+                    "color": "#e8e8e8",
+                    "opacity": 0.75
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "roof": {
+          "type": "gabled",
+          "height": 2500,
+          "overhang": 800,
+          "pitch": 10,
+          "thickness": 50,
+          "material": {
+            "color": "#e8e8e8",
+            "opacity": 0.75
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+@import '../styles/variables.css';
+
+.slide-selector {
+    padding: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slide {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.slide h3 {
+    margin: 0 0 var(--spacing-md) 0;
+    color: var(--text-color);
+    font-size: 1.2em;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.options button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1em;
+}
+
+.options button:hover {
+    border-color: #666;
+    background: var(--panel-background);
+}
+
+.options button.selected {
+    border-color: #007bff;
+    background: #007bff;
+    color: white;
+} 

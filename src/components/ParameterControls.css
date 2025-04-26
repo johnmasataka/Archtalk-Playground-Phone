@@ -1,0 +1,363 @@
+.parameter-controls {
+  padding: var(--spacing-lg);
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.parameter-controls h2 {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-color);
+}
+
+.parameter-welcome {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.parameter-welcome h3 {
+  color: #2c5282;
+  margin-bottom: 10px;
+}
+
+.parameter-welcome p {
+  color: #4a5568;
+  font-size: 1.1rem;
+}
+
+.parameter-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.parameter {
+  margin-bottom: var(--spacing-md);
+}
+
+.parameter label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
+}
+
+.parameter .unit {
+  color: var(--light-text-color);
+  margin-left: var(--spacing-xs);
+  font-size: var(--font-size-small);
+}
+
+/* Slider container styling */
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+  padding-bottom: 25px; /* Additional space for tick marks */
+}
+
+/* Slider control styling */
+.slider-control {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #e1e5eb;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.slider-control:hover {
+  background: #d1d7e2;
+}
+
+/* Dragging state for slider */
+.slider-control.slider-dragging {
+  background: #c0cfe0;
+  cursor: grabbing;
+}
+
+/* Slider thumb styling */
+.slider-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #4a90e2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-control::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #4a90e2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Active/dragging state for slider thumb */
+.slider-control:active::-webkit-slider-thumb,
+.slider-control:focus::-webkit-slider-thumb,
+.slider-control.slider-dragging::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: #3a7bc8;
+}
+
+.slider-control:active::-moz-range-thumb,
+.slider-control:focus::-moz-range-thumb,
+.slider-control.slider-dragging::-moz-range-thumb {
+  transform: scale(1.2);
+  background: #3a7bc8;
+}
+
+/* Ticks container */
+.ticks-container {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+}
+
+/* Tick styling */
+.tick {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.tick-mark {
+  width: 2px;
+  height: 8px;
+  background-color: #adb5bd;
+  margin: 0 auto;
+}
+
+.tick-label {
+  color: #6c757d;
+  font-size: 11px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+/* Make the first and last tick labels aligned to the edge */
+.tick:first-child .tick-label {
+  text-align: left;
+  transform: translateX(50%);
+}
+
+.tick:last-child .tick-label {
+  text-align: right;
+  transform: translateX(-50%);
+}
+
+/* Slider value display */
+.slider-value {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  color: #4a90e2;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* Animate slider value when dragging */
+.slider-dragging + .slider-value {
+  color: #3a7bc8;
+  transform: scale(1.1);
+}
+
+/* Color picker styling */
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.color-element-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background-color: #f0f5ff;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.color-picker {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.color-value {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Parameter history styling */
+.parameter-history {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.parameter-history h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.parameter-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parameter-history li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #eee;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Parameter description */
+.parameter-description {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Unit display */
+.unit {
+  font-size: 12px;
+  color: #888;
+  margin-left: 5px;
+}
+
+/* Select control styling */
+.select-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Number input styling */
+.number-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Loading state */
+.parameter-loading {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .parameter-controls {
+    padding: 15px;
+  }
+  
+  .slider-container {
+    padding-bottom: 35px; /* More space for labels on mobile */
+  }
+  
+  .tick-label {
+    font-size: 10px;
+  }
+  
+  /* Reduce number of visible ticks on small screens */
+  .tick:nth-child(odd) {
+    display: none;
+  }
+}
+
+.color-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-selector input[type="color"] {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.color-selector span {
+  font-family: monospace;
+  color: #666;
+}
+
+/* 下拉选择框样式 */
+.select-control {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: white;
+  font-size: var(--font-size-regular);
+  color: var(--text-color);
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.select-control:focus {
+  border-color: var(--primary-color);
+}
+
+/* 数字输入框样式 */
+.number-input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-regular);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.number-input:focus {
+  border-color: var(--primary-color);
+} 
